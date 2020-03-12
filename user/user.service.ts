@@ -11,6 +11,7 @@ export class UsersService {
     country: string,
     fullName: string,
   ) {
+    console.log(email);
     try {
       const user1 = await User.findOne({ where: { email: email } });
       if (user1) {
